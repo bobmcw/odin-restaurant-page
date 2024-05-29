@@ -23,4 +23,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
   optimization: {
     runtimeChunk: 'single',
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
  };
