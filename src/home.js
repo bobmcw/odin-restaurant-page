@@ -31,6 +31,16 @@ const info = () =>{
     infobody.appendChild(createDay("Saturday",8,9));
     return infobody; 
 }
+const location = () => {
+    const locationbody = document.createElement("div");
+    const header = document.createElement("h3");
+    header.innerText = "Location";
+    const text = document.createElement("p");
+    text.innerText = "123 Main street New York City NY";
+    locationbody.appendChild(header);
+    locationbody.appendChild(text);
+    return locationbody;
+}
 
 export default function renderHome() {
     const homeBody = document.createElement("div");
@@ -41,6 +51,7 @@ export default function renderHome() {
     homeBody.appendChild(header);
     homeBody.appendChild(galery())
     homeBody.appendChild(info())
+    homeBody.appendChild(location())
 
     return homeBody;
 }
