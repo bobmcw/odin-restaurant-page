@@ -18,7 +18,7 @@ const pageRenderButton = (name,page) => {
 }
 
 export default function renderHeader(){
-    const header = document.querySelector("header");
+    const header = document.querySelector("nav");
     header.appendChild(pageRenderButton("home",renderHome())); 
     header.appendChild(pageRenderButton("Menu",renderMenu()));
 }
