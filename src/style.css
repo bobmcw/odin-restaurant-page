@@ -54,5 +54,6 @@ nav > button{
     border-bottom: none;
     padding: 10px;
     color: white;
+    border-radius: 8px;
     background-color: #2B3467;
 }
