@@ -4,6 +4,9 @@ import lemonade from "./images/lemonade.jpeg";
 import britishBreakfast from './images/britishBreakfast.jpeg';
 import omlet from './images/omlet.jpeg';
 import pancakes from './images/pancakes.jpeg';
+import curry from './images/curry.jpeg';
+import burger from './images/burger.jpeg';
+import dumplings from './images/dumplings.jpeg';
 const menuItem = (itemname, description, imagesrc) => {
   const item = document.createElement("div");
   item.classList.add("menuItem");
@@ -72,5 +75,33 @@ export default function renderMenu() {
     )
   );
   menuBody.appendChild(breakfasts);
+
+  const diners = document.createElement("div");
+  diners.classList.add("category");
+  const dinerheader = document.createElement("h2");
+  dinerheader.innerText = "Dinners";
+  diners.appendChild(dinerheader);
+  diners.appendChild(
+    menuItem(
+        "Coconut curry shrimp",
+        "This coconut curry shrimp is mildly spicy and creamy, and brimming with Thai-inspired flavors such as curry paste, lemongrass, and ginger!",
+        curry
+    )
+  );
+  diners.appendChild(
+    menuItem(
+        "chili burger",
+        "this burger is a perfect item for all meat lovers and those who like a bit of spice in their food!",
+        burger
+    )
+  );
+  diners.appendChild(
+    menuItem(
+        "dumplings",
+        "Homemade dumpling wrappers packed with a tofu and veggie filling! These vegetable dumplings are pan-fried to get that really nice golden brown crust before being served!",
+        dumplings
+    )
+  );
+  menuBody.appendChild(diners);
   return menuBody;
 }
