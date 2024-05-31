@@ -1,5 +1,6 @@
 import renderHome from "./home";
 import renderMenu from "./menu";
+import renderContact from "./contact"
 
 const renderPage = (page) => { 
     const content = document.querySelector('#content');
@@ -19,6 +20,7 @@ const pageRenderButton = (name,page) => {
 
 export default function renderHeader(){
     const header = document.querySelector("nav");
-    header.appendChild(pageRenderButton("home",renderHome())); 
+    header.appendChild(pageRenderButton("Home",renderHome())); 
     header.appendChild(pageRenderButton("Menu",renderMenu()));
+    header.appendChild(pageRenderButton("Contact",renderContact()));
 }

@@ -9,6 +9,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #BAD7E9;
 }
 #content{
     display: flex;
@@ -17,14 +18,14 @@ body{
     flex-direction: column;
 }
 .home,
-.menu{
+.menu,
+.contact{
     display: flex;
     width: 100%;
     height: fit-content;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #BAD7E9;
 }
 .home > *{
     margin-bottom: 2%;
@@ -53,7 +54,8 @@ body{
     border-radius: 80px;
     background-color: #2B3467;
 }
-.menuItem{
+.menuItem,
+.contactCard{
     display: flex;
     width: fit-content;
     flex-direction: column;
@@ -61,6 +63,14 @@ body{
     justify-content: center;
     text-align: center;
     color: white;
+}
+.contactCard{
+    background-color: #2B3467;
+    width: 33%;
+    aspect-ratio: 3/1;
+    border: 3px solid #EB455F;
+    margin-top: 2%;
+    border-radius: 16px;
 }
 .menuItem > img{
     margin: 2%;
