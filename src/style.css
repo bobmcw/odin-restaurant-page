@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 body{
     width: 100%;
     height: 100%;
@@ -12,13 +13,14 @@ body{
 #content{
     display: flex;
     width: 100%;
+    height: 100%;
     flex-direction: column;
 }
 .home,
 .menu{
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -40,6 +42,7 @@ body{
     aspect-ratio: 1/1;
 }
 .category{
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,6 +65,7 @@ body{
 .menuItem > img{
     margin: 2%;
     border-radius: 16px;
+    min-width: 220px;
     width: 33%;
     aspect-ratio: 1/1;
 }
